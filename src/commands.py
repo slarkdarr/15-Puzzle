@@ -7,8 +7,8 @@ class Commands:
     def command_runnable(self):
         print(self.board)
         print("Press arrow to move the empty box")
-        print("Press 'SHIFT' to shuffle the self.board n times")
-        print("Press 'SPACE' to view solution of the current self.board")
+        print("Press 'SHIFT' to shuffle the board n times")
+        print("Press 'SPACE' to view solution of the current board")
         print("Press 'ESC' to exit\n")
 
         def on_press(key):
@@ -23,8 +23,8 @@ class Commands:
                     self.board.move_left()
                 print(self.board)
                 print("Press arrow to move the empty box")
-                print("Press 'SHIFT' to shuffle the self.board n times")
-                print("Press 'SPACE' to view solution of the current self.board")
+                print("Press 'SHIFT' to shuffle the board n times")
+                print("Press 'SPACE' to view solution of the current board")
                 print("Press 'ESC' to exit\n")
             elif key == keyboard.Key.space:
                 self.board.solve()
@@ -33,17 +33,17 @@ class Commands:
                 print("Current self.board :\n")
                 print(self.board)
                 print("Press arrow to move the empty box again")
-                print("Press 'SHIFT' to shuffle the self.board n times")
-                print("Press 'SPACE' to view solution of the current self.board")
+                print("Press 'SHIFT' to shuffle the board n times")
+                print("Press 'SPACE' to view solution of the current board")
                 print("Press 'ESC' to exit\n")
             elif key == keyboard.Key.shift:
-                n = int(input("Enter how many times to shuffle the self.board : "))
+                n = int(input("Enter how many times to shuffle the board : "))
                 self.board.shuffle(n)
                 print()
                 print(self.board)
                 print("Press arrow to move the empty box")
-                print("Press 'SHIFT' to shuffle the self.board n times")
-                print("Press 'SPACE' to view solution of the current self.board")
+                print("Press 'SHIFT' to shuffle the board n times")
+                print("Press 'SPACE' to view solution of the current board")
                 print("Press 'ESC' to exit\n")
             elif key == keyboard.Key.esc:
                 exit()
