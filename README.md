@@ -6,6 +6,7 @@
 2. Open command line/terminal
 3. Change directory to **src** folder in this repository
 4. Run `main.py` on your command line/terminal
+
 ## Algorithm Explanation
 This program is using A* Search algorithm to solve the 15-puzzle. A* Search algorithm is one of the best and popular technique used in path-finding and graph traversals.
 
@@ -18,3 +19,6 @@ What A* Search Algorithm does is that at each step it picks the node according t
 We define ‘g’ and ‘h’ as simply as possible below
 g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there. 
 h = the estimated movement cost to move from that given square on the grid to the final destination. This is often referred to as the heuristic, which is nothing but a kind of smart guess. We really don’t know the actual distance until we find the path, because all sorts of things can be in the way (walls, water, etc.). There can be many ways to calculate this ‘h’.
+
+## Author
+Daffa Ananda Pratama Resyaly -- 13519107
